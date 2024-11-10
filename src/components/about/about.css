@@ -1,0 +1,233 @@
+
+
+.about__container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.section__title{
+    margin-bottom: 4rem;
+}
+.about__data{
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.about__data::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+}
+
+.about__description{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about__skills{
+    row-gap: 1.25rem;
+}
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 4rem; */
+}
+
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills__number{
+    line-height: 1.2;
+}
+
+.skills__bar,
+.skills__percentage{
+    height: 7px;
+    border-radius: 0.25rem;
+}
+
+.skills__bar{
+    background-color: #f1f1f1;
+}
+
+.skills__percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.development{
+    width: 95%;
+    background-color: rgb(248, 152, 68);
+}
+.ui__design{
+    width: 90%;
+    background-color: rgb(120, 227, 129);
+}
+.backend{
+    width: 50%;
+    background-color: rgb(92, 127, 198);
+}
+
+.about__boxes {
+    display: grid; /* Use grid for proper alignment */
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.35rem;
+    justify-items: center; /* Center the boxes */
+}
+/* .about__boxes{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.875rem;
+    margin-top: 4.35rem;
+} */
+
+/* .about__box{
+    display: flex;
+    column-gap: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem ;
+} */
+
+.about__box {
+    display: flex;
+    column-gap: 1.5rem;
+    width: 3rem; /* Remove fixed width, let them adjust based on content */
+    height: 3rem; /* Adjust height as needed */
+    margin-bottom: 1rem;
+    justify-content: center; /* Align content inside the box */
+    align-items: center; /* Center vertically */
+}
+.about__icon{
+    /* font-size: var(--h1-font-size); */
+    /* width: 10; */
+    color: #dedeea;
+
+}
+
+.about__title{
+    font-size: 1rem;
+}
+.about__subtitle{
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 1024px){
+    .about__container{
+        grid-template-columns: 720px;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+
+    .about__data::before{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 49%;
+        top: -20px;
+
+    }
+
+    .about__img{
+        justify-self: center;
+        width: 8rem;
+        height: auto;
+}
+    }
+
+    .about__box{
+        flex-direction: column;
+        row-gap: .5rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about__container{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .about__data::before{
+        left: 47%;
+    }
+
+    .about__data{
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+    }
+
+    .about__boxes{
+        grid-template-columns: repeat(2, 150px);
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .about__title{
+        font-size: 0.8rem;
+    }
+    .about__subtitle{
+        font-size: 0.6rem;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 576px){
+    .about__container{
+        grid-template-columns: 320px;justify-content: center;
+    }
+
+    .about__title{
+        font-size: 1rem;
+    }
+
+    .about__box{
+        margin-top: 2rem;
+        
+    }
+
+    .about__title{
+        font-size: 0.8rem;
+    }
+    .about__subtitle{
+        font-size: 0.6rem;
+    }
+   
+}
+
+@media screen and (max-width: 350px){
+    .about__container{
+        grid-template-columns: 1fr;justify-content: center;
+    }
+
+    .about__boxes{
+        grid-template-columns: 1fr;
+
+    }
+    .about__title{
+        font-size: 0.8rem;
+    }
+    .about__subtitle{
+        font-size: 0.6rem;
+    }
+   
+}
