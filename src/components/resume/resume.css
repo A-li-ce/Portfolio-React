@@ -3,6 +3,7 @@
     column-gap: 1.875rem;
 }
 
+
 .timeline{
     background-color: var(--container-color);
     padding: 1.875rem;
@@ -52,6 +53,11 @@
 }
 
 @media screen and (max-width: 1024px){
+    .section__title{
+        text-align: center;
+        padding-left: 0;
+    
+    }
     .resume__container{
         grid-template-columns: 450px;
         justify-content: center;

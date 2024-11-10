@@ -97,23 +97,15 @@
     margin-top: 4.35rem;
 } */
 
-/* .about__box{
+.about__box{
     display: flex;
     column-gap: 1.5rem;
     width: 3rem;
     height: 3rem;
     margin-bottom: 1rem ;
-} */
-
-.about__box {
-    display: flex;
-    column-gap: 1.5rem;
-    width: 3rem; /* Remove fixed width, let them adjust based on content */
-    height: 3rem; /* Adjust height as needed */
-    margin-bottom: 1rem;
-    justify-content: center; /* Align content inside the box */
-    align-items: center; /* Center vertically */
 }
+
+
 .about__icon{
     /* font-size: var(--h1-font-size); */
     /* width: 10; */
@@ -121,9 +113,6 @@
 
 }
 
-.about__title{
-    font-size: 1rem;
-}
 .about__subtitle{
     font-size: 0.7rem;
 }
@@ -133,6 +122,10 @@
         grid-template-columns: 720px;
         justify-content: center;
         row-gap: 1.875rem;
+    }
+
+    .section__title{
+        text-align: center;
     }
 
     .about__data::before{
@@ -149,8 +142,6 @@
         width: 8rem;
         height: auto;
 }
-    }
-
     .about__box{
         flex-direction: column;
         row-gap: .5rem;
@@ -180,9 +171,7 @@
         justify-content: center;
     }
 
-    .about__title{
-        font-size: 0.8rem;
-    }
+ 
     .about__subtitle{
         font-size: 0.6rem;
     }
@@ -196,7 +185,7 @@
         grid-template-columns: 320px;justify-content: center;
     }
 
-    .about__title{
+    .section__title{
         font-size: 1rem;
     }
 
@@ -205,9 +194,6 @@
         
     }
 
-    .about__title{
-        font-size: 0.8rem;
-    }
     .about__subtitle{
         font-size: 0.6rem;
     }
@@ -223,9 +209,7 @@
         grid-template-columns: 1fr;
 
     }
-    .about__title{
-        font-size: 0.8rem;
-    }
+
     .about__subtitle{
         font-size: 0.6rem;
     }

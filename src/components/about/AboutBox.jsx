@@ -17,7 +17,7 @@ import sass from "../../assets/laravel.png";
 
 const AboutBox = () => {
   return (
-    <div className="about__boxes containergrid">
+    <div className="about__boxes container grid">
       <div className="about__box">
         <img src={html} className="about__icon" alt="" />
         <div>

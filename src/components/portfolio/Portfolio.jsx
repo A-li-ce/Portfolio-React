@@ -14,7 +14,7 @@ const Portfolio = () => {
 
   return (
     <section className="work container section" id="work">
-      <h2 className="section_title">My Work</h2>
+      <h2 className="section__title">My Work</h2>
 
       <div className="work__filters">
         <span className="work__item" onClick={() => setItems(Menu)}>

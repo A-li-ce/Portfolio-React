@@ -23,7 +23,7 @@ function About() {
             </a> */}
 
             <a
-              href="https://drive.google.com/uc?export=download&id=1WxFQhN-ghEi7zKiJnUREOBAjyR0H-2JT"
+              href="https://drive.google.com/uc?export=download&id=1k8Qa_LuM9WiU_q81wnc4b33VXgSsNfSH"
               className="btn"
             >
               Download CV

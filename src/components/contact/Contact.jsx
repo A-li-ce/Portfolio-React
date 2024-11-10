@@ -48,7 +48,7 @@ const Contact = () => {
               placeholder="Write your Message"
             ></textarea>
           </div>
-          <button className="btn">Send Message</button>
+          <button className="send__btn btn">Send Message</button>
         </form>
       </div>
     </section>

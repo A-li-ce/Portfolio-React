@@ -6,16 +6,11 @@
     margin-bottom: 2.5rem;
 }
 
-.section_title{
-    margin-bottom: 1rem;
-    font-size: var(--h1-font-size);
-}
-
 .work__item{
     cursor: pointer;
     font-weight: var(--font-bold);
     transition: .3s;
-    color: #408d9c;
+    color: var(--text-color);
 }
 
 .work__item:hover{
@@ -128,8 +123,14 @@
     opacity: 0;
 }
 
+.send__btn{
+    text-align: center;
+}
+
 @media screen and (max-width: 1170px){
-    
+    .section__title{
+        text-align: center;  
+    }
     .work__filters{
         justify-content: center;
     }

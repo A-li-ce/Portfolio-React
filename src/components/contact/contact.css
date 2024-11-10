@@ -1,6 +1,10 @@
 .contact.session{
     padding-bottom : 6.25rem;
 }
+.section__title{
+    padding-left: 1rem;
+
+}
 
 .contact__container{
     grid-template-columns: 4fr 8fr;
@@ -59,10 +63,14 @@
     background-color: skyblue;
 }
 
+
 @media screen and (max-width: 1024px){
     .contact__container{
         grid-template-columns: 300px 360px;
         justify-content: center;
+    }
+    .section__title{
+        text-align: center;  
     }
     .contact__form-group{
         grid-template-columns: 1fr;
